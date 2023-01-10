@@ -2,8 +2,8 @@
 
 let lastClickedParaItem;
 
-document.querySelectorAll('.paraItem').forEach(paraItem => {
-  paraItem.addEventListener('mouseover', event => {
+document.querySelectorAll('.items').forEach(paraItem => {
+  paraItem.addEventListener('click', event => {
     // Get the parent ul element of the clicked paraItem element
     const parentUl = event.target.parentElement;
 
@@ -25,14 +25,31 @@ document.querySelectorAll('.paraItem').forEach(paraItem => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // giving the list items text content
-const programmingLanguages = ['JavaScript', 'Java', 'Python', 'C++', 'C#', 'PHP'];
+const programmingLanguages = ['JavaScript', 'Java', 'Python', 'C++', 'C#', 'PHP' , 'Ruby'];
 
 document.querySelectorAll('ul .sub-item').forEach((li, index) => {
   li.textContent = programmingLanguages[index];
 });
 
-const frameWorks = ['Bootstrap', 'Ruby on Rails', 'Torch', 'scss', 'saas#', 'Tailwind'];
+const frameWorks = ['Bootstrap', 'Ruby on Rails', 'Torch', 'scss', 'saas#', 'Tailwind' , 'React'];
 document.querySelectorAll('.items2 .sub-item').forEach((li, index) => {
   li.textContent = frameWorks[index];
 });
